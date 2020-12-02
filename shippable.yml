@@ -6,6 +6,7 @@ node_js:
 build:
   ci:
     - npm install
+    - npm install pm2
     ###- ./script/test
     - ssh -p 22 hahahazim@18.138.250.62
     - pm2 start index.js
