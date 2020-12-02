@@ -8,3 +8,4 @@ build:
     - npm install
     #- ./script/test
     - ssh -p 22 ec2-user@18.138.250.62
+    - pm2 start index.js
