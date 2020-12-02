@@ -12,4 +12,4 @@ build:
     - sudo npm install -g pm2
     - git pull
     - npm install - production
-    - pm2 restart all
+    - pm2 restart index.js
