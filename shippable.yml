@@ -8,6 +8,8 @@ build:
     - ssh -p 22 hahahazim@18.138.250.62
     - npm install
     - npm install pm2
+    - sudo npm i -g pm2
+    - sudo npm install -g pm2
     - git pull
     - npm install - production
-    - pm2 start index.js
+    - pm2 restart all
