@@ -5,10 +5,11 @@ node_js:
 
 build:
   ci:
-    - ssh -p22 hahahazim@18.138.250.62 "/home/hahahazim/.nvm/versions/node/v15.3.0/bin/pm2 restart index.js"
+    - ssh -p22 hahahazim@18.138.250.62
     - npm install
     - npm install pm2
     - sudo npm i -g pm2
     - sudo npm install -g pm2
     - git pull
     - npm install - production
+    - /home/hahahazim/.nvm/versions/node/v15.3.0/bin/pm2 restart index.js
