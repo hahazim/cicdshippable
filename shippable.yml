@@ -7,14 +7,14 @@ build:
   ci:
     - pwd
     - ssh -p 22 hahahazim@18.138.250.62
-    - cd cicdshippable
     - pwd
+    - cd ~/cicdshippable
+    - git pull
     - hostname
     - npm install
     - npm install pm2
     - sudo npm i -g pm2
     - sudo npm install -g pm2
-    - git pull
     - npm install - production
     - pm2 restart index.js
     
