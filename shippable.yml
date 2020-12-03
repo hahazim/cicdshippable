@@ -6,7 +6,8 @@ node_js:
 build:
   ci:
     - ssh -p 22 hahahazim@18.138.250.62
-    - npm install
+    - hostname
+    #- npm install
     #- npm install pm2
     #- sudo npm i -g pm2
     #- sudo npm install -g pm2
