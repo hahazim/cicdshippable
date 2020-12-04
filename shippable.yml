@@ -6,7 +6,7 @@ node_js:
 build:
   ci:
     - pwd
-    - ssh -p 22 hahahazim@18.138.250.62 pwd
+    - ssh -p 22 hahahazim@18.138.250.62
     - pwd
     - cd ~/cicdshippable
     - git pull
@@ -17,4 +17,5 @@ build:
     - sudo npm install -g pm2
     - npm install - production
     - pm2 restart index.js
+    #
     
