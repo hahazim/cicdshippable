@@ -6,7 +6,7 @@ node_js:
 build:
   ci:
     - pwd
-    - ssh -p 22 ec2-user@18.138.250.62 "cd ~/home/ec2-user/2 && git pull"
+    - ssh -p 22 ec2-user@18.138.250.62 "cd ~/2 && git pull"
     #- 
     # #- pwd
     # - cd ~/cicdshippable
