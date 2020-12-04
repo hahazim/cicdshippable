@@ -6,16 +6,17 @@ node_js:
 build:
   ci:
     - pwd
-    - ssh -p 22 hahahazim@18.138.250.62
-    - pwd
-    - cd ~/cicdshippable
-    - git pull
-    - hostname
-    - npm install
-    - npm install pm2
-    - sudo npm i -g pm2
-    - sudo npm install -g pm2
-    - npm install - production
-    - pm2 restart index.js
-    #
+    - ssh -p 22 ec2-user@18.138.250.62 "cd ~/home/ec2-user/2 && git pull"
+    #- 
+    # #- pwd
+    # - cd ~/cicdshippable
+    # - git pull
+    # - hostname
+    # - npm install
+    # - npm install pm2
+    # - sudo npm i -g pm2
+    # - sudo npm install -g pm2
+    # - npm install - production
+    # - pm2 restart index.js
+    # #
     
