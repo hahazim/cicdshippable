@@ -5,10 +5,9 @@ node_js:
 
 build:
   ci:
-    - pwd
-    - ssh ec2-user@18.138.250.62 "cd /home/ec2-user/node1 && git pull"
-    #- 
-    # #- pwd
+    # - pwd
+    - ssh ec2-user@18.138.250.62 "cd /home/ec2-user/node1 && git pull && - pm2 restart index.js" 
+    # - pwd
     # - cd ~/cicdshippable
     # - git pull
     # - hostname
@@ -17,6 +16,4 @@ build:
     # - sudo npm i -g pm2
     # - sudo npm install -g pm2
     # - npm install - production
-    # - pm2 restart index.js
-    # #
     
